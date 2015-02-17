@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>header!</title>
+		<link rel="stylesheet" type="text/css" href="">
+
+		<style type="text/css">
+			.square1 {
+				height: 300px;
+				width: 300px;
+				border: solid black 5px;
+				/*background-color: green;*/
+			}
+
+			.square2 {
+				height: 300px;
+				width: 300px;
+				border: solid black 5px;
+				/*background-color: red;*/
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class = "square1" id ="a"></div>
+		<button type = "button" id = "button1" onclick = "ChangeColor()">Make Green</button>
+
+		<div class = "square2" id = "b"></div>
+		<button type = "button" id = "button2" onclick = "ChangeColor1()">Make Red</button>
+
+		<script>
+			function ChangeColor() {
+				document.getElementById("a").style.backgroundColor = "green";
+			};
+
+			function ChangeColor1() {
+				document.getElementById("b").style.backgroundColor = "red";
+			};
+		</script>
+	</body>
+</html>
