@@ -1,15 +1,30 @@
 var assert = {
+	i:0,
+	pass:0,
+
 	equals: function(message,result) {
-		var rg = new RedOrGreen("square");
+		var newBlock = document.createElement('div');
+
+		newBlock.id = "square"+this.i;
+		newBlock.style.height = "150px";
+		newBlock.style.width = "150px";
+		newBlock.style.border = "5px solid black";
+		newBlock.style.display = "inline-Block"
+
+		document.body.appendChild(newBlock);
+
+		var rg = new RedOrGreen(newBlock.id);
 		if(message === result) {
+			newBlock.innerHTML= "Pass";
 			rg.makeGreen();
+
 		}
 		else{
+			newBlock.innerHTML= "Fail";
 			rg.makeRed();
 		}
-
+		this.i++;
 	}
-
 }
 
 var TestMyCode = {

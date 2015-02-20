@@ -1,6 +1,6 @@
 (function() {
-setBackgroundColor("mySquare",'red');
-	
+setBackgroundColor("mySquare",'violet');
+	    
 		if(document.getElementById("mySquare").style.backgroundColor === "red"){
 			window.alert("success!");
 		}
