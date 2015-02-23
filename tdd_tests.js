@@ -15,3 +15,11 @@ TestMyCode.run("testing blah function", function(assert){
     // is the result as we expected?
     assert.equals("blah blah blah blah!", result);
 });
+
+TestMyCode.run("testing mama function", function(assert){
+    var result = mama();
+    // is the result as we expected?
+    assert.equals("blah blah blah blah!", result);
+});
+
+results();

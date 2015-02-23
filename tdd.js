@@ -17,6 +17,7 @@ var assert = {
 		if(message === result) {
 			newBlock.innerHTML= "Pass";
 			rg.makeGreen();
+			this.pass++;
 
 		}
 		else{
@@ -32,4 +33,12 @@ var TestMyCode = {
 		this.name = name;
 		assertTest(assert);
 	}
+}
+
+
+function results() {
+	var dee = document.createElement('p');
+
+	document.body.appendChild(dee);
+	dee.innerHTML = "Number of passed tests is " + assert.pass + " out of " + assert.i;
 }
