@@ -1,7 +1,7 @@
 function ChangeColor() {
-	document.getElementById("sqr").style.backgroundColor = "green";
+	document.getElementById("square").style.backgroundColor = "green";
 };
 
 function ChangeColor1() {
-	document.getElementById("sqr").style.backgroundColor = "red";
+	document.getElementById("square").style.backgroundColor = "red";
 };

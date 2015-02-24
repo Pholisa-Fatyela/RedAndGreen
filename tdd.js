@@ -9,7 +9,7 @@ var assert = {
 		newBlock.style.height = "150px";
 		newBlock.style.width = "150px";
 		newBlock.style.border = "5px solid black";
-		newBlock.style.display = "inline-Block"
+		newBlock.style.display = "inline-Block";
 
 		document.body.appendChild(newBlock);
 
